@@ -7,13 +7,13 @@
             Animal[] animals = { new Wolf(false), new Hippo(), new Wolf(true), new Wolf(false), new Hippo() };
             foreach (Animal animal in animals)
             {
-                if (animal is Hippo hippo)
+                if (animal is ISwimmer swimmer)
                 {
-                    hippo.Swim();
+                    swimmer.Swim();
                 }
-                if (animal is Wolf wolf)
+                if (animal is IPackHunter hunter)
                 {
-                    wolf.HuntInPack();
+                    hunter.HuntInPack();
                 }
                 Console.WriteLine();
             }

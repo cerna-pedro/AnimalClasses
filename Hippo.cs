@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AnimalClasses
 {
-    internal class Hippo : Animal
+    internal class Hippo : Animal, ISwimmer
     {
         public override void MakeNoise()
         {
